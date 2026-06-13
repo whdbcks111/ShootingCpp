@@ -11,7 +11,7 @@ void UGameHudWidget::UpdateSpawnState(int aliveCount, int maxCount, int killCoun
 {
 	if (EnemyCountText != nullptr)
 	{
-		EnemyCountText->SetText(FText::FromString(FString::Printf(TEXT("%d"), maxCount - killCount)));
+		EnemyCountText->SetText(FText::FromString(FString::Printf(TEXT("%d"), FMath::Max(0, maxCount - killCount))));
 	}
 }
 
