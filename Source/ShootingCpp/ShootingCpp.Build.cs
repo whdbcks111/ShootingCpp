@@ -9,7 +9,7 @@ public class ShootingCpp : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange([
-			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput"
+			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "Niagara", "UMG"
 		]);
 
 		PrivateDependencyModuleNames.AddRange([]);
